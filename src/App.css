@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #461f1f; 
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 124px; 
   color: white;
+  text-align: center;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-family: "Caveat", cursive;
+  font-size: 74px; 
+  color: white;
+  text-align: center;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jumbotron {
+  background-color: #461f1f;
+  margin-bottom: 0px; 
+  padding-top: 64px;
 }
+
+#bg {
+  position: fixed;
+  top: -70%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1; }
+
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%; }
+
+#infoPanel {
+  align-self: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ececec; }
+
+#infoPanelBody {
+  width: 100%;
+  padding: 30px;
+  font-size: 22px;
+  margin: 0;
+  border: 1px dotted; }
+  #infoPanelBody h3 {
+    font-family: "Patrick Hand", cursive;
+    font-size: 34px; }
+
+.nav {
+  text-align: center;
+  background-color: #d47057;
+  font-family: "Raleway", sans-serif; }
+  .nav li {
+    color: white; }
+
+.nav-item {
+  width: 20%;
+  border: 1px solid white; }
+
+.nav-link {
+  color: white; }
+
+.nav .active .nav-link {
+  background-color: #f0ad93;
+  color: black; }
+
+.nav-link:hover {
+  color: black; }
+
+#orderButton {
+  margin-top: 120px;
+  margin-bottom: 120px; }
+
+#menuPanel {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ececec; }
+
+#menuPanelBody {
+  background-color: #ececec;
+  width: 100%;
+  margin: 0; }
+  #menuPanelBody thead {
+    font-size: 42px; }
+  #menuPanelBody tbody th {
+    background-color: #647a67;
+    color: white;
+    font-size: 34px;
+    font-family: "Patrick Hand", cursive; }
+  #menuPanelBody td {
+    background-color: #b6b0a5;
+    vertical-align: middle; }
+  #menuPanelBody h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px; }
+
+#orderPanel {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ececec; }
+
+.orderPanelBody {
+  width: 100%;
+  padding: 30px;
+  font-size: 22px;
+  margin: 0;
+  border: 2px ridge;
+  background-color: #d6c2b8; }
+  .orderPanelBody label {
+    font-size: 18px; }
+  .orderPanelBody option {
+    font-size: 14px; }
+  .orderPanelBody #extras {
+    background-color: #ececec; }
+    .orderPanelBody #extras label {
+      font-size: 16px; }
+  .orderPanelBody h3 {
+    font-family: "Patrick Hand", cursive; }
+
+.ownerFav {
+  font-size: 16px;
+  font-family: "Patrick Hand", cursive; }
+
+#yourName {
+  padding-top: 10px; }
+
+#yourEmail {
+  padding-top: 10px; }
+
+form label {
+  font-family: "Patrick Hand", cursive; }
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #241b17; }
