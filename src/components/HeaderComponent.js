@@ -31,11 +31,10 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
-
-                    <Navbar expand="sm">
-                        <div className="container">
-                            <NavbarToggler onClick={this.toggleNav} />
-                            <Collapse isOpen={this.state.isNavOpen} navbar>
+                    <div className="container">
+                        <Navbar expand="md" className="navbar-dark justify-content-center pb-0">
+                            <NavbarToggler onClick={this.toggleNav}/>
+                            <Collapse isOpen={this.state.isNavOpen} className="navbar-collapse" id="drNavbar">
                                 <Nav navbar>
                                     <NavItem active>
                                         <NavLink className="nav-link" to="/home">
@@ -64,22 +63,7 @@ class Header extends Component {
                                     </NavItem>
                                 </Nav>
                             </Collapse>
-                        </div>
-                    </Navbar>
-
-                    <div className="container">
-                        <nav className="navbar navbar-expand-sm navbar-dark justify-content-center pb-0">
-                            <NavbarToggler onClick={this.toggleNav} />
-                            <div isOpen={this.state.isNavOpen} className="collapse navbar-collapse" id="drNavbar">
-                                <ul className="nav navbar-collapse">
-                                    <li className="nav-item active"><a className="nav-link" href="#">Home</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="menu.html">Menu</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="about.html">About</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="contact.html">Contact</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="order.html">Order</a></li>
-                                </ul>
-                            </div>
-                        </nav>
+                        </Navbar>
                     </div>
                 </Jumbotron>
 

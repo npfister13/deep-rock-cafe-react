@@ -24,7 +24,6 @@ h2 {
 .jumbotron {
   background-color: #461f1f;
   margin-bottom: 0px; 
-  padding-top: 64px;
 }
 
 #bg {
@@ -68,19 +67,37 @@ h2 {
   .nav li {
     color: white; }
 
+.navbar-nav {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: "Raleway", sans-serif; 
+  color: white; 
+  flex-direction: row;
+}
+  .navbar-nav li {
+    color: white;
+    background-color: #d47057;
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: white;
+  }
+  .navbar-nav .nav-item .nav-link:hover{
+    color: black;
+  }
+
+li .nav-item{
+  width: 20%;
+}
+
 .nav-item {
   width: 20%;
   border: 1px solid white; }
 
-.nav-link {
+.active {
+  background-color: #f0ad93;
   color: white; }
 
-.nav .active .nav-link {
-  background-color: #f0ad93;
-  color: black; }
-
-.nav-link:hover {
-  color: black; }
 
 #orderButton {
   margin-top: 120px;
