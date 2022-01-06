@@ -1,16 +1,9 @@
 import React from 'react';
 import OrderButton from './OrderButtonComponent';
 import { Card, CardImg, CardText, CardBody, CardTitle, Container, Col, Row, Media } from 'reactstrap';
+import Background from './BackgroundComponent';
 
-function Background(props) {
-    return (
-        <div id="bg">
-            <img src="/assets/coffee-plant-01.jpg" alt="" />
-        </div>
-    )
-}
-
-function Home(props) {
+function Home() {
     return (
         <React.Fragment>
             <Background/>

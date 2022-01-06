@@ -47,4 +47,4 @@ export const DRINKS = [
         description: "Lorem ipsum dolor sit amet. In a nisl eu justo bibendum tempus. Donec.",
         favorite: false
     }
-]
+];

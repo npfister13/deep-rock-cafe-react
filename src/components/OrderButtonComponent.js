@@ -5,7 +5,7 @@ function OrderButton(props){
     return(
         <React.Fragment>
             <div id="orderButton" className="d-flex justify-content-center align-self-center">
-                <Button className="btn-dark btn-outline-light" onClick="">
+                <Button className="btn-dark btn-outline-light">
                     ORDER NOW
                 </Button>
             </div>

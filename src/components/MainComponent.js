@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
-// import About from './AboutComponent';
-// import { CAMPSITES } from '../shared/campsites';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Menu from './MenuComponent';
-import { DRINKS } from '../shared/drinks';
-import { FOODS } from '../shared/foods';
-// import Contact from './ContactComponent';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import About from './AboutComponent';
+import Contact from './ContactComponent';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+// import { addComment}
+
+const mapStateToProps = state => {
+    return{
+        foods: state.foods,
+        drinks: state.drinks
+    }
+}
+
 
 class Main extends Component {
     
-    constructor(props) {
-        super(props);
-        this.state = {
-            drinks: DRINKS,
-            foods: FOODS
-        }
-    }
 
     render() {
-        
         const HomePage = () => {
             return (
                 <Home />
@@ -33,9 +32,9 @@ class Main extends Component {
                 <Header />
                 <Switch>
                     <Route path="/home" component={HomePage} />
-                    <Route exact path="/menu" render={() => <Menu drinks={this.state.drinks}/> } />
-                    {/* <Route exact path='/about' render={() => <About /> */}
-                    {/* <Route exact path='/contact' component={Contact}/> */}
+                    <Route exact path="/menu" render={() => <Menu drinks={this.props.drinks}/> } />
+                    <Route path='/about' component={About} />
+                    <Route path='/contact' component={Contact}/>
                     <Redirect to='/home'/>
                 </Switch>
                 <Footer />
