@@ -1,8 +1,14 @@
 import React from "react";
+import Background from "./BackgroundComponent";
+import OrderButton from "./OrderButtonComponent";
 
 function About() {
     return (
         <React.Fragment>
+
+            <Background />
+            <OrderButton />
+
             <div id="infoPanel" className="container-fluid">
                 <div className="row">
                     <div className="container">
