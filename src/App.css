@@ -114,6 +114,11 @@ li .nav-item{
   margin: 0; }
   #menuPanelBody thead {
     font-size: 42px; }
+  .tableBackground {
+    width: 100%;
+    margin: 0;
+    background-color: #b6b0a5;
+  }
   #menuPanelBody tbody th {
     background-color: #647a67;
     color: white;
@@ -121,7 +126,11 @@ li .nav-item{
     font-family: "Patrick Hand", cursive; }
   #menuPanelBody td {
     background-color: #b6b0a5;
-    vertical-align: middle; }
+    vertical-align: middle; 
+  }
+  #menuPanelBody td img {
+    width: 100%;
+  }
   #menuPanelBody h3 {
     font-family: "Roboto", sans-serif;
     font-size: 26px; }

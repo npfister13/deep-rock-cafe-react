@@ -27,16 +27,17 @@ class Main extends Component {
                 <Home />
             )
         }
+        console.log(this.state.drinks);
 
         return (
             <div>
                 <Header />
                 <Switch>
                     <Route path="/home" component={HomePage} />
-                    <Route exact path="/menu" render={() => <Menu drinks={this.props.drinks}/> } />
+                    <Route exact path="/menu" render={() => <Menu drinks={this.state.drinks} foods={this.state.foods}/> }/>
                     <Route path='/about' component={About} />
                     <Route path='/contact' component={Contact}/>
-                    <Route exact path='/order' render={() => <Order drinks={this.props.drinks} foods={this.props.foods} /> } />
+                    <Route exact path='/order' render={() => <Order drinks={this.state.drinks} foods={this.state.foods} /> } />
                     <Redirect to='/home'/>
                 </Switch>
                 <Footer />
