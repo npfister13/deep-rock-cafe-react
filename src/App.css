@@ -140,22 +140,22 @@ li .nav-item{
   padding-bottom: 30px;
   background-color: #ececec; }
 
-.orderPanelBody {
+#orderPanelBody {
   width: 100%;
   padding: 30px;
   font-size: 22px;
   margin: 0;
   border: 2px ridge;
   background-color: #d6c2b8; }
-  .orderPanelBody label {
+  #orderPanelBody label {
     font-size: 18px; }
-  .orderPanelBody option {
+  #orderPanelBody option {
     font-size: 14px; }
-  .orderPanelBody #extras {
+  #orderPanelBody #extras {
     background-color: #ececec; }
-    .orderPanelBody #extras label {
+    #orderPanelBody #extras label {
       font-size: 16px; }
-  .orderPanelBody h3 {
+  #orderPanelBody h3 {
     font-family: "Patrick Hand", cursive; }
 
 .ownerFav {
